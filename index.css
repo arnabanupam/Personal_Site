@@ -207,23 +207,3 @@ h1 {
   clip-path: $star;
 }
 
-footer {
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  text-transform: uppercase;
-  padding: 10px;
-  font-family: $font;
-  font-size: 0.7em;
-  p {
-    letter-spacing: 3px;
-    color: $red;
-  }
-  a {
-    color: $white;
-    text-decoration: none;
-    &:hover {
-      color: $blue;
-    }
-  }
-}
