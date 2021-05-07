@@ -12,7 +12,7 @@ let timer = setInterval(function() {
 
   // get the difference
   let diff;
-  if(month > 5) {
+  if(month > 4 ) {
     diff = tenthofMayNextYear - today;
   } else {
     diff = tenthofMay - today;
