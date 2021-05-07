@@ -1,23 +1,23 @@
-const options = {
-  bottom: '64px', // default: '32px'
-  right: 'unset', // default: '32px'
-  left: '32px', // default: 'unset'
-  time: '0.5s', // default: '0.3s'
-  mixColor: '#fff', // default: '#fff'
-  backgroundColor: '#fff',  // default: '#fff'
-  buttonColorDark: '#100f2c',  // default: '#100f2c'
-  buttonColorLight: '#fff', // default: '#fff'
-  saveInCookies: false, // default: true,
-  label: '🌓', // default: ''
-  autoMatchOsTheme: true // default: true
-}
+// const options = {
+//   bottom: '64px', // default: '32px'
+//   right: 'unset', // default: '32px'
+//   left: '32px', // default: 'unset'
+//   time: '0.5s', // default: '0.3s'
+//   mixColor: '#fff', // default: '#fff'
+//   backgroundColor: '#fff',  // default: '#fff'
+//   buttonColorDark: '#100f2c',  // default: '#100f2c'
+//   buttonColorLight: '#fff', // default: '#fff'
+//   saveInCookies: false, // default: true,
+//   label: '🌓', // default: ''
+//   autoMatchOsTheme: true // default: true
+// }
 
-const darkmode = new Darkmode(options);
-darkmode.showWidget();
+// const darkmode = new Darkmode(options);
+// darkmode.showWidget();
 
 const year = new Date().getFullYear();
-const fourthOfJuly = new Date(year, 6,4).getTime();
-const fourthOfJulyNextYear = new Date(year + 1, 6, 4).getTime();
+const tenthofMay = new Date(year, 5,10).getTime();
+const tenthofMayNextYear = new Date(year + 1, 5, 10).getTime();
 const month = new Date().getMonth();
 
 // countdown
@@ -28,10 +28,10 @@ let timer = setInterval(function() {
 
   // get the difference
   let diff;
-  if(month > 6) {
-    diff = fourthOfJulyNextYear - today;
+  if(month > 5) {
+    diff = tenthofMayNextYear - today;
   } else {
-    diff = fourthOfJuly - today;
+    diff = tenthofMay - today;
   }
 
 
