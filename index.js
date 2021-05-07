@@ -1,7 +1,7 @@
 
 const year = new Date().getFullYear();
-const tenthofMay = new Date(year, 5,10).getTime();
-const tenthofMayNextYear = new Date(year + 1, 5, 10).getTime();
+const tenthofMay = new Date(year, 4,10).getTime();
+const tenthofMayNextYear = new Date(year + 1, 4, 10).getTime();
 const month = new Date().getMonth();
 
 // countdown
@@ -12,7 +12,7 @@ let timer = setInterval(function() {
 
   // get the difference
   let diff;
-  if(month > 4 ) {
+  if(month > 4) {
     diff = tenthofMayNextYear - today;
   } else {
     diff = tenthofMay - today;
